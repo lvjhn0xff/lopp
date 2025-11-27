@@ -1,7 +1,7 @@
-import { D } from '#models/sanity-check'
-import { B, C } from '#models/sanity-check'
+import { LoppHelpers } from '#lopp'
 import { BaseCommand } from '@adonisjs/core/ace'
 import type { CommandOptions } from '@adonisjs/core/types/ace'
+import { check } from '../check.js'
 
 export default class SideTask extends BaseCommand {
   static commandName = 'side:task'
@@ -12,6 +12,6 @@ export default class SideTask extends BaseCommand {
   }
 
   async run() {
-
+    await check()
   }
 }
