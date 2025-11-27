@@ -14,8 +14,7 @@ export default class AppProvider {
    */
   async boot() {
     loppPlugin.modelRegistry.setScanLocations({
-      "./app/models" : "#models/", 
-      "./extras/test-models/" : "#test-models/"
+      "./app/models" : "#models/"
     }) 
   }
 

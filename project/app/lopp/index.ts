@@ -82,7 +82,7 @@ export class ModelRegistry
         let fullModelMapping : StringMap = {}
         for(let [scanLocation, scanImportLocation] of Object.entries(scanLocations)) {
             if(this.verbose) {
-                console.log(":: Registering for " + scanImportLocation)
+                console.log(":: ===== Registering for " + scanImportLocation + " ===== #")
             }
             let files = LoppHelpers.listAllFiles(scanLocation) as string[]
             files = LoppHelpers.filterByFileExtension(files, ".ts")
