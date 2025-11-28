@@ -1,9 +1,7 @@
 import { test } from '@japa/runner'
-import { ModelRegistry } from '#lopp'
-import { spyOn } from 'tinyspy'
-import env from '#start/env'
-import testUtils from '@adonisjs/core/services/test_utils'
-import RegistryTable from '../../app/lopp/models/RegistryTable.js'
+import { ModelRegistry } from '#lopp/core/model_registry'
+import { restoreAll, spyOn } from 'tinyspy'
+import RegistryTable from '../../app/lopp/models/registry_table.js'
 
 test.group('ModelRegistry', () => {
   test('setScanLocation() - can set scan location', async ({ assert }) => {
@@ -47,6 +45,7 @@ test.group('ModelRegistry', () => {
 
     assert.deepEqual(mr.modelMapping, fullModelMapping)
 
+    restoreAll()
   })
 
 

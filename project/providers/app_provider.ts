@@ -1,4 +1,4 @@
-import { loppPlugin, LoppPlugin } from '#lopp'
+import { loppPlugin } from '#lopp/core/plugin'
 import type { ApplicationService } from '@adonisjs/core/types'
 
 export default class AppProvider {

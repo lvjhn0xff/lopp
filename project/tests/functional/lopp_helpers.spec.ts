@@ -1,5 +1,5 @@
 import { test } from '@japa/runner'
-import { LoppHelpers } from '#lopp'
+import { LoppHelpers } from '#lopp/core/helpers'
 
 test.group('LoppHelpers', () => {
   test('listAllFiles()', async ({ assert }) => {

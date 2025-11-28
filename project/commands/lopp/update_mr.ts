@@ -1,4 +1,4 @@
-import { loppPlugin, ModelRegistry } from '#lopp'
+import { loppPlugin } from '#lopp/core/plugin'
 import { BaseCommand } from '@adonisjs/core/ace'
 import type { CommandOptions } from '@adonisjs/core/types/ace'
 
